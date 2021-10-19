@@ -1,0 +1,26 @@
+.pop-up {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.961);
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &--active {
+    position: sticky;
+    transform: translateX(0);
+  }
+  &__body{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+}
